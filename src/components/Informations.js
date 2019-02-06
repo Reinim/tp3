@@ -9,7 +9,7 @@ export default class Informations extends React.Component
             <img className="imgProfile" src={this.props.image} alt= 'imageDuProfil'/>
             <p>{this.props.firstname} {this.props.name}</p>
             <p>{this.props.birthdate} </p>
-            <button>Change Style</button>
+            <button className='Right'>Change Style</button>
             </div>
              );
     }

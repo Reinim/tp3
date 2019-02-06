@@ -1,12 +1,13 @@
 .Profile
 {
-margin: 100px;
-padding-left: 100px;
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
 }
 
 .BarBoutons
 {
-  float: right;
+margin-left: 50%;
   display: flex;
   padding-right: 200px;
 }

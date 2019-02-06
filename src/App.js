@@ -17,12 +17,12 @@ class App extends Component {
         name="Claude"
         />
       </div>
-      <p>
-      <Profile className="Profile" image="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
+      <p className="Profile">
+      <Profile  image="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
       firstname="Jeanne"
       name="Rambur"
       birthdate="28/09/1996"
-      color="blue"
+      color="lightblue"
       post ="BONJOUR ceci est mon dernier post">
       </Profile>
       </p>
