@@ -1,3 +1,16 @@
+.Profile
+{
+margin: 100px;
+padding-left: 100px;
+}
+
+.BarBoutons
+{
+  float: right;
+  display: flex;
+  padding-right: 200px;
+}
+
 .App {
   text-align: center;
 }
