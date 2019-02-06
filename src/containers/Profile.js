@@ -12,7 +12,8 @@ class Profile extends React.Component
             birthdate={this.props.birthdate}
             color={this.props.color}/>
             <Post
-            post={this.props.post}>
+            post={this.props.post}
+            color={this.props.color}>
             </Post>
             </div>
         )

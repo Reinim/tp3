@@ -1,0 +1,27 @@
+.imgProfile
+{
+    height: 200px;
+    width: 200px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.Right
+{
+    margin-left: 75%;
+    
+}
+
+.button{
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.oButton
+{
+    height: 50px;
+    width: 125px;
+    margin-bottom: 15px;
+}
