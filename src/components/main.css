@@ -25,3 +25,16 @@
     width: 125px;
     margin-bottom: 15px;
 }
+.Profile
+{
+  margin-left: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.BarBoutons
+{
+margin-left: 50%;
+  display: flex;
+  padding-right: 200px;
+}
