@@ -15,10 +15,35 @@ class Profile extends React.Component {
             color: "lightblue",
             nbColor: 1,
             post: "BONJOUR ceci est mon dernier post",
+            likes: 0,
+            jeanne: 0,
+            claude: 0,
+            martine: 0,
         }
+        
         this.changerProfil = this.changerProfil.bind(this);
     }
 
+    ajoutLikes(prenom) {
+        if (this.state.firstname === 'Jeanne') {
+            this.setState({
+                jeanne: this.state.jeanne + 1,
+                likes : this.state.jeanne
+            })
+        }
+        else if (this.state.firstname === 'Martine') {
+            this.setState({
+                martine: this.state.martine + 1,
+                likes : this.state.martine
+            })
+        }
+        else if (this.state.firstname === 'Claude') {
+            this.setState({
+                claude: this.state.claude += 1,
+                likes : this.state.claude
+            })
+        }
+    }
     changerProfil(prenom) {
         if (prenom === 'Jeanne') {
             this.setState({
@@ -28,6 +53,7 @@ class Profile extends React.Component {
                 image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
                 color: "lightblue",
                 post: "J'aimerais que ce site soit plus beau",
+                likes: this.state.jeanne
             })
         }
         else if (prenom === 'Martine') {
@@ -38,6 +64,7 @@ class Profile extends React.Component {
                 image: "https://www.dakar7.com/wp-content/uploads/2016/02/marie.jpg",
                 color: "pink",
                 post: "L'interface est pas dingue, et le choix des couleurs pas top",
+                likes: this.state.martine
             })
         }
         else if (prenom === 'Claude') {
@@ -48,6 +75,7 @@ class Profile extends React.Component {
                 image: "https://img2.telestar.fr/var/telestar/storage/images/9/7/9/979492/claude-francois-qui-etaient-les-femmes-vie-photos_exact1024x768_l.jpg",
                 color: "blue",
                 post: "... on ne peut pas retirer à ce site qu'il fait ce qu'on lui demande.",
+                likes: this.state.claude
             })
         }
     }
@@ -99,7 +127,7 @@ class Profile extends React.Component {
                     <button className='button' onClick={() => this.changerProfil('Claude')} >Claude</button>
                 </div>
                 <div className='Profile'>
-                    <div style={{ background: this.state.color, marginTop: 30}}>
+                    <div style={{ background: this.state.color, marginTop: 30 }}>
                         <Informations image={this.state.image} firstname={this.state.firstname}
                             name={this.state.name}
                             birthdate={this.state.birthdate}
@@ -107,10 +135,17 @@ class Profile extends React.Component {
                         />
                         <button onClick={() => this.changeColor()} className='Right oButton'>Change Style</button>
                     </div>
-                    <Post
-                        post={this.state.post}
-                        color={this.state.color}>
-                    </Post>
+
+                    <div style={{ background: this.state.color, marginTop: 30 }}>
+
+                        <Post
+                            post={this.state.post}
+                            color={this.state.color}>
+                        </Post>
+                        <button className='oButton' style={{ marginLeft: 15 }} onClick={() => this.ajoutLikes()}>👍 C'est super</button>
+
+                        {this.state.likes}
+                    </div>
                 </div>
             </div>
         )
