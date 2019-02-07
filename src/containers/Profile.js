@@ -9,12 +9,12 @@ class Profile extends React.Component {
 
         this.state = {
             firstname: "Jeanne",
-            name: "Rambur",
-            birthdate: "28/09/1996",
-            image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+            name: "Savary",
+            birthdate: "02/02/1966",
+            image: "https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/en-famille-m6-jeanne-savary-je-deteins-sur-marjorie-4589102/94500194-1-fre-FR/En-Famille-M6-Jeanne-Savary-Je-deteins-sur-Marjorie.jpg",
             color: "lightblue",
             nbColor: 1,
-            post: "BONJOUR ceci est mon dernier post",
+            post: "Mais elle est où Jeanne ?",
             likes: 0,
             jeanne: 0,
             claude: 0,
@@ -48,11 +48,11 @@ class Profile extends React.Component {
         if (prenom === 'Jeanne') {
             this.setState({
                 firstname: "Jeanne",
-                name: "Rambur",
-                birthdate: "28/09/1996",
-                image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg",
+                name: "Savary",
+                birthdate: "02/02/1966",
+                image: "https://resize.programme-television.ladmedia.fr/r/670,670/img/var/premiere/storage/images/tele-7-jours/news-tv/en-famille-m6-jeanne-savary-je-deteins-sur-marjorie-4589102/94500194-1-fre-FR/En-Famille-M6-Jeanne-Savary-Je-deteins-sur-Marjorie.jpg",
                 color: "lightblue",
-                post: "J'aimerais que ce site soit plus beau",
+                post: "Mais elle est où Jeanne ?",
                 likes: this.state.jeanne
             })
         }
@@ -72,7 +72,7 @@ class Profile extends React.Component {
                 firstname: "Claude",
                 name: "François",
                 birthdate: "01/02/1939",
-                image: "https://img2.telestar.fr/var/telestar/storage/images/9/7/9/979492/claude-francois-qui-etaient-les-femmes-vie-photos_exact1024x768_l.jpg",
+                image: "https://1.bp.blogspot.com/-ABAEa2b5rao/WqKWB8Y_T5I/AAAAAAAAB7M/yg4z9P9XR_AJjrRaaJpkNUuqM_JMaFunwCLcBGAs/s1600/ClaudeFran%25C3%25A7ois.jpg",
                 color: "blue",
                 post: "... on ne peut pas retirer à ce site qu'il fait ce qu'on lui demande.",
                 likes: this.state.claude
